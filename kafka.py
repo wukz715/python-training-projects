@@ -6,7 +6,7 @@ import math
 import logging as log
 
 #kafka  的ip和端口
-host = '172.25.33.86:9092'
+host = '127.0.0.1:9092'
 #连接kafka
 #log.basicConfig(level=log.DEBUG)
 client = KafkaClient(hosts=host)
@@ -51,14 +51,12 @@ def get(mytopic,n):
 
 
 if __name__ == '__main__':
-
     body={"type": "test","src": "test"}
     #发送kafka
     # send('test',body)
     #获取kafka信息
     get('test',1)
-else:
-    pass
+
     
 
 
