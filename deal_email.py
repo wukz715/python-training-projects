@@ -1,4 +1,8 @@
 #-*- coding:utf-8 -*-
+'''
+date:20200702
+description:learn from CSDN, I just want to record.
+'''
 
 import os
 import pandas as pd
