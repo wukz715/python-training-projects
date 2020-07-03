@@ -1,6 +1,6 @@
 #-*- coding:utf-8 -*-
 '''
-本脚跟是通过持续监控github 的api来查看项目是否更新，若是项目更新后则打开项目url进行查看(后续也可以实现更新后则拉去至本地)
+本脚跟是通过持续监控github 的api来查看项目是否更新，若是项目更新后则打开项目url进行查看，并且拉取代码至本地
 date：20200703
 author：zhong
 '''
@@ -8,12 +8,6 @@ import os
 import time
 import requests
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.action_chains import ActionChains
-
-
-
-
 
 def minotor_github_project(user,project_name):
     #github的api链接，数据展示为json格式数据
@@ -47,4 +41,3 @@ def minotor_github_project(user,project_name):
 
 if __name__ == "__main__":
     minotor_github_project('wukz715','python-training-projects')
-
