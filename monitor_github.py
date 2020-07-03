@@ -37,7 +37,7 @@ def minotor_github_project(user,project_name):
             os.system(f"cd /Users/walter/Git/{project_name} && git pull")
             print("命令执行完毕")
     #为了避免循环太过于频繁，设定10分钟跟新一次
-    time.sleep(60)
+    time.sleep(600)
 
 if __name__ == "__main__":
     minotor_github_project('wukz715','python-training-projects')
