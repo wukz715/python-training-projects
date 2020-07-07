@@ -1,6 +1,9 @@
 # -*- coding:utf-8 -*-
 import matplotlib.pyplot as plt
-
+'''
+author:zhong
+date:20200702
+'''
 
 def curve():
     squares = [1, 4, 9, 16, 25]
